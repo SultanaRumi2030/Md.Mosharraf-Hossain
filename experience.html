@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Experience</title>
+<style>
+  body {
+    background: #0e0e0e;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .experience-section {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .left-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(50%); /* Lower brightness */
+}
+
+.left-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(60%); /* Slight brightness increase on hover */
+}
+
+
+  .left-image img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Right Experience Section */
+  .right-content {
+    flex: 1.4;
+    background: #111;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+  }
+
+  .experience-card {
+    background: linear-gradient(135deg, #1f1f1f, #111111);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 30px rgba(0, 255, 255, 0.3);
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .experience-header h3 {
+    font-size: 1.4em;
+    color: #00f2fe;
+  }
+
+  .experience-header span {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+
+  .experience-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .experience-card ul li {
+    padding: 8px 0;
+    border-left: 3px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .experience-card ul li:hover {
+    border-left: 3px solid #00f2fe;
+  }
+
+  .back-home-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    align-self: center;
+  }
+
+  .back-home-btn:hover {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 900px) {
+    .experience-section {
+      flex-direction: column;
+    }
+    .left-image {
+      height: 300px;
+    }
+    
+  }
+</style>
+</head>
+<body>
+
+<section class="experience-section">
+  <!-- Left Cover Image -->
+  <div class="left-image">
+    <!-- Optimized image in WebP with lazy loading -->
+    <img src="ceo2.png" alt="Client Image" loading="lazy">
+  </div>
+
+  <!-- Right Experience Content -->
+  <div class="right-content">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3>Diligites</h3>
+        <span>2018 - Present</span>
+      </div>
+      <ul>
+        <li>Chief Executive Officer</li>
+        <li>Project Manager</li>
+        <li>Software Engineer</li>
+        <li>Trainer & Mentor</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3>EDGE IICT CUET DST, ICT Division</h3>
+        <span>May 2024 - Present</span>
+      </div>
+      <ul>
+        <li>Mentor of Training Programs</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3>IT Business Incubator, CUET</h3>
+        <span>April 2024 - Present</span>
+      </div>
+      <ul>
+        <li>Strategy Consultant</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3>IT Business Incubator, CUET</h3>
+        <span>January 2022 - Present</span>
+      </div>
+      <ul>
+        <li>Trainer</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3>8 IT Projects, BHTPA, ICT Division</h3>
+        <span>October 2023 - Present</span>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-home-btn">Back to Home</a>
+  </div>
+</section>
+
+</body>
+</html>
