@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #000e13, #203a43, #111052);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .skills-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .skills-section p {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: #d1d1d1;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.4s ease;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+      cursor: pointer;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-12px) scale(1.03);
+      border-color: #00d2ff;
+      box-shadow: 0 15px 30px rgba(0, 210, 255, 0.4);
+    }
+
+    .skill-icon {
+      font-size: 40px;
+      color: #00d2ff;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover .skill-icon {
+      transform: rotate(360deg) scale(1.2);
+      color: #ff416c;
+    }
+
+    .skill-card h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .skill-card p {
+      font-size: 0.95rem;
+      color: #bcbcbc;
+    }
+
+    .row {
+      row-gap: 30px;
+    }
+
+    /* Back to Home Button */
+    .btn-back-home {
+      margin-top: 50px;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(90deg, #2563eb, #1e40af);
+      box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .btn-back-home:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 25px rgba(37, 99, 235, 0.9);
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>My expertise spans across these core areas of development, technology, and management:</p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+            <h5>Project Planning</h5>
+            <p>Creating clear, actionable project roadmaps ensuring delivery on time with precision.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-business-time"></i></div>
+            <h5>Business Strategy</h5>
+            <p>Designing data-driven strategies that align with growth and organizational goals.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h5>Full-Stack Development</h5>
+            <p>Proficient in building scalable web apps with modern frameworks & technologies.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+            <h5>Cloud & DevOps</h5>
+            <p>Experience in deploying, automating, and scaling apps on AWS, Azure & CI/CD pipelines.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-bullhorn"></i></div>
+            <h5>Marketing Strategy</h5>
+            <p>Executing digital marketing campaigns to maximize brand visibility and reach.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+            <h5>Agile Methodologies</h5>
+            <p>Applying Agile & Scrum practices for efficient team collaboration and project success.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h5>Data Analysis</h5>
+            <p>Leveraging data insights, visualization, and AI to optimize decisions and workflows.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+            <h5>Innovation & Growth</h5>
+            <p>Identifying opportunities and driving innovation to achieve sustainable business growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Home Button -->
+      <div class="text-center">
+        <a href="home.html" class="btn-back-home"><i class="fas fa-arrow-up me-2"></i>Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+  
+    <!-- Footer -->
+<footer class="footer py-5" style="background: linear-gradient(135deg, #0d1117, #161b22, #1f2937);">
+  <div class="container text-center text-light">
+    
+    <!-- Name & Title -->
+    <h4 class="fw-bold text-gradient mb-2">Md. Mosharraf Hossain</h4>
+    <p class="opacity-75">CEO, Trainer & Mentor | Driving innovation, empowering youth, and building impactful digital solutions.</p>
+    
+    <!-- Quick Links -->
+    <div class="footer-links d-flex flex-wrap justify-content-center mt-4 gap-3">
+      <a href="home.html">Home</a>
+      <a href="index.html">About</a>
+      <a href="skill.html">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="footer-social mt-4 d-flex justify-content-center gap-3">
+      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+
+   
+
+    <!-- Copyright -->
+    <div class="mt-4 small text-muted">
+      &copy; 2025 Md. Mosharraf Hossain. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Custom CSS -->
+<style>
+  .text-gradient {
+    background: linear-gradient(90deg, #38bdf8, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .footer-links a {
+    color: #9ca3af;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .footer-links a:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+  }
+
+  .footer-social .social-icon {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+  }
+  .footer-social .social-icon:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+  }
+
+  .btn-neon {
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+    transition: all 0.3s ease;
+  }
+  .btn-neon:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.9);
+  }
+</style>
+
+
+
+</body>
+</html>
